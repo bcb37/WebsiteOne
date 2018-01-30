@@ -12,13 +12,15 @@ Feature: Showing Karma summary on profile page
     And user "Bob" have karma:
       | total | hangouts_attended_with_more_than_one_participant |
       | 20    | 20                                               |
-  
+
   Scenario: Having karma count on users profile page
     Given I am logged in as "Bob"
     And I am on my "Profile" page
     Then the karma summary is "20"
-  
+
   Scenario: Having karma count as zero on users profile page with zero hangouts_attended_with_more_than_one_participant
     Given I am logged in as "Alice"
     And I am on my "Profile" page
     Then the karma summary is "0"
+
+  Scenario: Clicking on karma shows activities tab

@@ -1,0 +1,10 @@
+Git - can pull brnaches from other users' forks by setting ano additional remote
+
+DB - need to run rake db:seed to get random (test) user in database
+
+JS: put click event functions into 'init' to set behavior for elements  on page
+
+git remote add aaron https://github.com/achock/WebsiteOne
+  507  git branch 1817_karma_points_to_activity_tab
+  510  git co 1817_karma_points_to_activity_tab 
+  517  git pull aaron 1817_karma_points_to_activity_tab 

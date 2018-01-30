@@ -20,7 +20,9 @@ WebsiteOne.define('Users', function () {
 
     function init() {
         $('.yt_link').on('click', selectVideo);
-
+        $('#gotoactivity').click(function() {
+          $('#tabs a[href="#activity"]').tab('show');
+        });
         $('#skills').tags({
             readOnly: false,
             tagClass: 'add-btn-agile',
